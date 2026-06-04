@@ -1,0 +1,47 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "dotenv"
+version = "0.9.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "python-dotenv" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b2/b7/545d2c10c1fc15e48653c91efde329a790f2eecfbbf2bd16003b5db2bab0/dotenv-0.9.9-py2.py3-none-any.whl", hash = "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9", size = 1892, upload-time = "2025-02-19T22:15:01.647Z" },
+]
+
+[[package]]
+name = "python-dotenv"
+version = "1.2.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/ed/0301aeeac3e5353ef3d94b6ec08bbcabd04a72018415dcb29e588514bba8/python_dotenv-1.2.2.tar.gz", hash = "sha256:2c371a91fbd7ba082c2c1dc1f8bf89ca22564a087c2c287cd9b662adde799cf3", size = 50135, upload-time = "2026-03-01T16:00:26.196Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/d7/1959b9648791274998a9c3526f6d0ec8fd2233e4d4acce81bbae76b44b2a/python_dotenv-1.2.2-py3-none-any.whl", hash = "sha256:1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a", size = 22101, upload-time = "2026-03-01T16:00:25.09Z" },
+]
+
+[[package]]
+name = "tomlrt"
+version = "1.7.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/52/14/5730a598e86a27a4253fdb771f0cc7b732caf356ebe9892b3d32de6eab5b/tomlrt-1.7.2.tar.gz", hash = "sha256:bebcc983bbbc4985ab5633f96dda39c112356368bd9e0e9ddded32b7b518d78e", size = 289547, upload-time = "2026-06-01T21:41:38.781Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d8/28/bb5c125a7aa8982c84c471f6527b71316425e4278fc22bb9a82c1125f0b0/tomlrt-1.7.2-py3-none-any.whl", hash = "sha256:04d3000b8a9ef40a0c7672bcc7ca3354e21cc9864beb023b231e808021e47a8c", size = 128991, upload-time = "2026-06-01T21:41:37.148Z" },
+]
+
+[[package]]
+name = "watchgate"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "dotenv" },
+    { name = "tomlrt" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "tomlrt", specifier = ">=1.7.2" },
+]

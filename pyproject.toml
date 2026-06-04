@@ -1,0 +1,13 @@
+[project]
+name = "watchgate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "tomlrt>=1.7.2",
+]
+[paths]
+    main_file="/Workspace/Users/x1088029@guest.telecomitalia.it/monitoring_tool"
+    utils_file="/Workspace/Users/x1088029@guest.telecomitalia.it/monitoring_tool_Utils"
