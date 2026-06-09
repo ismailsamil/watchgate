@@ -11,3 +11,23 @@ dependencies = [
 [paths]
     main_file="/Workspace/Users/x1088029@guest.telecomitalia.it/monitoring_tool"
     utils_file="/Workspace/Users/x1088029@guest.telecomitalia.it/monitoring_tool_Utils"
+
+[ALARM_LEVELS]
+    0= "OK — all files present"
+    1= "FILE MISSING — still within retrieval window"
+    2= "FILE MISSING — usecase is waiting, no action yet"
+    3= "FILE MISSING — usecase deadline already passed"
+
+
+[_MASK_TO_STRFTIME] 
+    "yyyyMMdd"= "%Y%m%d"
+    "yyyyMM"="%Y%m"
+    "yyyy"= "%Y"
+    "MMdd"= "%m%d"
+
+[_SUPPORTED_FREQUENCIES]
+freq=["D", "W", "M"]
+
+[tables]
+_CONFIG_TABLE = "monitoring.usecase_config"
+_ALARM_TABLE  = "monitoring.alarm_log"
