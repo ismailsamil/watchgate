@@ -9,8 +9,8 @@ dependencies = [
     "tomlrt>=1.7.2",
 ]
 [paths]
-    main_file="/Workspace/Users/x1088029@guest.telecomitalia.it/monitoring_tool"
-    utils_file="/Workspace/Users/x1088029@guest.telecomitalia.it/monitoring_tool_Utils"
+    main_file=""
+    utils_file=""
 
 [ALARM_LEVELS]
     0= "OK — all files present"
